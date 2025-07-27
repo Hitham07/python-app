@@ -22,11 +22,8 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install dependencies
-        run: echo "Install dependencies"
-
-      - name: Run tests
-        run: echo "Run tests"
+      - name: Run composite action
+        uses: ./.github/actions/run-tests
 
   build:
     name: Build Project
